@@ -190,20 +190,6 @@ public class SerialHelper extends org.qtproject.qt.android.bindings.QtActivity {
         
        return devices;
    }   
-   /***
-   public static ArrayList<UsbSerialDriver> findAllDrivers(Context context) {
-          UsbManager usbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
-          UsbSerialProber usbDefaultProber = UsbSerialProber.getDefaultProber();
-		  final ArrayList<UsbSerialDriver> result = new ArrayList<UsbSerialDriver>();
-		  for (final UsbDevice usbDevice : usbManager.getDeviceList().values()) {
-			final UsbSerialDriver driver = usbDefaultProber.probeDevice(usbDevice);
-			if (driver != null) {
-			  result.add(driver);
-			}
-		  }
-		  return result;
-		}
-       ****/     
 
     private static final BroadcastReceiver usbReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
