@@ -1,4 +1,4 @@
-//This only an example
+//This only an example backend
 
 #include "backend.h"
 
