@@ -67,7 +67,6 @@ DeviceList::DeviceList(QObject *parent) : QObject(parent) {
       const int productId = device.callMethod<jint>("getProductId"); 
       const int port = device.callMethod<jint>("getPort"); 
       const QString driver = device.callObjectMethod("getDriver", "()Ljava/lang/String;").toString(); 
-     // m_assembledDeviceList.append(new Device(title, artist, duration, this));
       m_assembledDeviceList.append(new Device(vendorId, productId, port, driver, this));  
    }
  
